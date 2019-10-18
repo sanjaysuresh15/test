@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Energy Consumption Analysis</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="../static/img/favicon.png" sizes="32x32" type="image/png">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="../static/css/custom.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="../static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="../static/css/aos.css">
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(../static/img/frontpage.jpg);">
+        <div class="container text-center text-md-left">
+            <header>
+                <div class="row justify-content-between">
+                    <div class="col-2">
+                        <img src="../static/img/logo.png" alt="logo">
+                    </div>
+                    <!-- <div class="col-6 align-self-center text-right">
+                        <a href="#" class="text-white lead">Get Early Access</a>
+                    </div> -->
+                </div>
+            </header>
+            <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true"
+                class="display-3 text-white font-weight-bold my-5">
+                U.S. Energy Consumption<br>
+                1960 - 2017
+            </h1>
+            <!-- <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="lead text-white my-4">
+                Enegery consumption by source, by state and by year. 
+                <br> What is the trend? 
+            </p> -->
+            <!-- <a href="#" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-green">Get Started</a> -->
+        </div>
+    </div>
+    <!-- three-blcok -->
+    <div class="container my-5 py-2">
+        <h2 class="text-center font-weight-bold my-5">Energy Source</h2>
+
+
+
+
+
+        <div class="row">
+            <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true"
+                class="col-md-4 text-center">
+                <img src="../static/img/coal-1.jpg" alt="Anti-spam" class="mx-auto">
+                <h4><a href="#">Coal</a></h4>
+                <p>Lorem ipsum dolor sit amet porro his no his deleniti</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true"
+                class="col-md-4 text-center">
+                <img src="../static/img/gas-2.jpg" alt="Phishing Detect" class="mx-auto">
+                <h4><a href="#">Nature Gas</a></h4>
+                <p>Ne error antiopam usu. Sed vocen concludaturque ea</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true"
+                class="col-md-4 text-center">
+                <img src="../static/img/petro-3.jpg" alt="Smart Scan" class="mx-auto">
+                <h4><a href="#">Petroleum</a></h4>
+                <p>Et usu ocurreret elaboraret doctus prodesse assueverit.</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true"
+                class="col-md-4 text-center">
+                <img src="../static/img/nuclear-4.jpg" alt="Smart Scan" class="mx-auto">
+                <h4><a href="#">Nuclear</a></h4>
+                <p>Et usu ocurreret elaboraret doctus prodesse assueverit.</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true"
+                class="col-md-4 text-center">
+                <img src="../static/img/renewable-5.jpg" alt="Smart Scan" class="mx-auto">
+                <h4><a href="#">Renewable Energy</a></h4>
+                <p>Et usu ocurreret elaboraret doctus prodesse assueverit.</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true"
+                class="col-md-4 text-center">
+                <img src="../static/img/dashboard.jpg" alt="Smart Scan" class="mx-auto">
+                <h4><a href="/dashboard">Dashboard</a></h4>
+                <p>Et usu ocurreret elaboraret doctus prodesse assueverit.</p>
+                
+                
+                <div id="data"></div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container my-5 py-2" id="price-table">
+        <h2 class="text-center font-weight-bold d-block mb-3">Snapshots</h2>
+        <div class="row">
+            <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true"
+                class="col-md-4 text-center py-4 mt-5">
+                <h4 class="my-4">PAST</h4>
+                <!-- <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">0</span> / MO.</p> -->
+                <p class="font-weight-bold"> <span class="display-2 font-weight-bold">?</span></p>
+                <ul class="list-unstyled">
+                    <h4>1960-2000</h4>
+                    <h6>Hint:</h6>
+                    <li>Coal</li>
+                    <li>Petroleum</li>
+                </ul>
+                <a href="dashboard.html" class="btn my-4 font-weight-bold atlas-cta cta-ghost">Guess</a>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"
+                class="col-md-4 text-center py-4 mt-5 rounded" id="price-table__premium">
+                <h4 class="my-4">NOW</h4>
+                <!-- <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">10</span> / MO.</p> -->
+                <p class="font-weight-bold"> <span class="display-2 font-weight-bold">?</span></p>
+                <ul class="list-unstyled">
+                    <h4>2000-2020</h4>
+                    <h6>Hint:</h6>
+                    <li>Natural Gas</li>
+                    <li>Nuclear</li>
+                </ul>
+
+                <a href="dashboard.html" class="btn my-4 font-weight-bold atlas-cta cta-white">Guess</a>
+                <!-- <a href="dashboard.html" class="btn my-4 font-weight-bold atlas-cta cta-green">Guess</a> -->
+            </div>
+            <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true"
+                class="col-md-4 text-center py-4 mt-5">
+                <h4 class="my-4">FUTURE</h4>
+                <!-- <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">30</span> / MO.</p> -->
+                <p class="font-weight-bold"> <span class="display-2 font-weight-bold">?</span></p>
+                <ul class="list-unstyled">
+                    <h4>2020-2040</h4>
+                    <h6>Hint:</h6>
+                    <li>Renewable</li>
+                    <li>Nuclear</li>
+                </ul>
+                <a href="dashboard.html" class="btn my-4 font-weight-bold atlas-cta cta-ghost">Guess</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="jumbotron jumbotron-fluid" id="contact" style="background-image: url(../static/img/contact-bk.jpg);">
+        <div class="container my-2">
+            <div class="row justify-content-between">
+                <img src="../static/img/logo1.png" alt="logo">
+
+                <div class="col-md-9 text-white">
+                    <h2 class="font-weight-bold">Contact Us</h2>
+
+                    <p class="my-2">
+                        Our professional team can help you analze and visualize any data requirments
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>Mitsuko Kitazawa</li>
+                        <li>Sanjay Suresh</li>
+                        <li>Jessie Kuo</li>
+                        <li>Yi Xiao</li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- AOS -->
+    <script src="../static/js/aos.js"></script>
+    <script>
+        AOS.init({
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <!-- API key -->
+    <script type="text/javascript" src="../static/js/config.js"></script>
+    <script type="text/javascript" src="../static/js/us-states.js"></script>
+    <script type="text/javascript" src="../static/js/logic.js"></script>
+</body>
+
+</html>
